@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8" />
+		<title=ne Java Compiler</title>
+		<script src="myScript1.js"></script>
+		<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+	</head>
+	<body>
+		
+		<div class="container">
+			<div class="row">&nbsp;</div>
+			<div class="row">&nbsp;</div>
+				<div class="jumbotron" style="text-align: center;"><h3>ONLINE JAVA COMPILER</h3></div>
+			<div class="row">&nbsp;</div>
+			
+			<div class="well">
+				<form name="myform">
+					<div class="form-group">
+					 	<I>Enter the name of your class:</I>
+						<input type="text"class="form-control" required placeholder="Please enter your class name" name="class" id="class" onblur="set()">
+					</div>
+					<div class="form-group col-md-6">
+						Write your java code here:<br>
+					<textarea class="form-control" required cols="40" rows="15" placeholder="Enter your code here" name="code" id="code"></textarea>
+					</div>
+					<div class="form-group col-md-6">
+						<div class="row">&nbsp;</div>
+						<textarea class="form-control" disabled cols="40" rows="15" name="code1" id="code1"></textarea>
+					</div>
+					<div class="form-group">
+						<p align="center">
+							<input type="button" class="btn btn-info" name="com" value="COMPILE" onclick="compile()">
+							&nbsp;&nbsp;
+							<input type="button" class="btn btn-success" name="execute" value="Run" onclick="run()">
+							&nbsp;&nbsp;
+							<input type="button" class="btn btn-danger" name="reset" value="Reset" onclick="blank()">
+						</p>
+					</div>
+				</form>
+			</div>
+		</div>
+</body>
+</html>
